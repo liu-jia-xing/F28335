@@ -1,0 +1,34 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Each subdirectory must supply rules for building sources it contributes
+KEY.obj: ../KEY.C $(GEN_OPTS) $(GEN_SRCS)
+	@echo 'Building file: $<'
+	@echo 'Invoking: C2000 Compiler'
+	"F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/source" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/source" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="KEY.pp" $(GEN_OPTS__FLAG) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+LCD.obj: ../LCD.c $(GEN_OPTS) $(GEN_SRCS)
+	@echo 'Building file: $<'
+	@echo 'Invoking: C2000 Compiler'
+	"F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/source" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/source" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="LCD.pp" $(GEN_OPTS__FLAG) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+PWM1Out.obj: ../PWM1Out.c $(GEN_OPTS) $(GEN_SRCS)
+	@echo 'Building file: $<'
+	@echo 'Invoking: C2000 Compiler'
+	"F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/source" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/source" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="PWM1Out.pp" $(GEN_OPTS__FLAG) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+main_PWM1Out.obj: ../main_PWM1Out.c $(GEN_OPTS) $(GEN_SRCS)
+	@echo 'Building file: $<'
+	@echo 'Invoking: C2000 Compiler'
+	"F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="F:/ccs/ccsv5/tools/compiler/c2000_6.1.3/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_common/source" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/include" --include_path="F:/ccs/work/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/source" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="main_PWM1Out.pp" $(GEN_OPTS__FLAG) "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

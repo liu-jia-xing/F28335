@@ -1,0 +1,13 @@
+/*
+ * BUzz.h
+ *
+ *  Created on: 2019Äê6ÔÂ18ÈÕ
+ *      Author: L9379
+ */
+
+#ifndef BUZZ_H_
+#define BUZZ_H_
+#include "DSP2833x_Device.h"     // DSP2833x Headerfile Include File
+#include "DSP2833x_Examples.h"   // DSP2833x Examples Include File
+void InitBuzzGpio(void);
+#endif /* BUZZ_H_ */

@@ -1,0 +1,40 @@
+
+**** Build of configuration Debug for project AD_9959 ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../AD_9959.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="AD_9959.d_raw"  "../AD_9959.c"
+"../AD_9959.c", line 77: remark: declaration may not appear after executable
+          statement in block
+      unsigned char FR1_DATA[3]={0x00,0x00,0xab,};
+      ^
+ 
+"../AD_9959.c", line 144: warning: function "write_datas" declared implicitly
+      write_datas(register_adress);
+      ^
+ 
+"../AD_9959.c", line 163: warning: function "write_datas" declared implicitly
+      write_datas(ControlValue);
+      ^
+ 
+"../AD_9959.c", line 159: warning: variable "i" was declared but never
+          referenced
+      unsigned char  i = 0;
+                     ^
+ 
+"../AD_9959.c", line 295: warning: declaration is incompatible with previous
+          "write_datas" (declared at line 144)
+  void write_datas(unsigned int data)
+       ^
+ 
+Finished building: "../AD_9959.c"
+ 
+Building target: "Example_2833xGpioSetup.out"
+Invoking: C2000 Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi -z -m"Example_2833xGpioSetup.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" -i"C:/F28335/AD_9959" -i"C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/lib" -i"C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/lib" -i"C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/lib" --priority --reread_libs --issue_remarks --verbose_diagnostics --xml_link_info="Example_2833xGpioSetup_linkInfo.xml" --entry_point=code_start --rom_model -o "Example_2833xGpioSetup.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./AD_9959.obj" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_SysCtrl.obj" "./DSP2833x_usDelay.obj" "./ad_main.obj" "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/cmd/28335_RAM_lnk.cmd" "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/cmd/DSP2833x_Headers_nonBIOS.cmd"  -lIQmath_fpu32.lib 
+Finished building target: "Example_2833xGpioSetup.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,53 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../28335_RAM_lnk.cmd 
+
+C_UPPER_SRCS += \
+../KEY.C 
+
+C_SRCS += \
+../LCD.c \
+../PWM1Out.c \
+../main_PWM1Out.c 
+
+OBJS += \
+./KEY.obj \
+./LCD.obj \
+./PWM1Out.obj \
+./main_PWM1Out.obj 
+
+C_DEPS += \
+./LCD.pp \
+./PWM1Out.pp \
+./main_PWM1Out.pp 
+
+C_UPPER_DEPS += \
+./KEY.pp 
+
+C_DEPS__QUOTED += \
+"LCD.pp" \
+"PWM1Out.pp" \
+"main_PWM1Out.pp" 
+
+C_UPPER_DEPS__QUOTED += \
+"KEY.pp" 
+
+OBJS__QUOTED += \
+"KEY.obj" \
+"LCD.obj" \
+"PWM1Out.obj" \
+"main_PWM1Out.obj" 
+
+C_UPPER_SRCS__QUOTED += \
+"../KEY.C" 
+
+C_SRCS__QUOTED += \
+"../LCD.c" \
+"../PWM1Out.c" \
+"../main_PWM1Out.c" 
+
+

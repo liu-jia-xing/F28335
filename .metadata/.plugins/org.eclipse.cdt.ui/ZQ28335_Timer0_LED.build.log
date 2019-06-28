@@ -1,0 +1,26 @@
+
+**** Build of configuration Debug for project ZQ28335_Timer0_LED ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main_Timer0_LED_Timer1and2.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/ZQ28335_Timer0_LED/DSP2833x_common/include" --include_path="C:/F28335/ZQ28335_Timer0_LED/DSP2833x_common/source" --include_path="C:/F28335/ZQ28335_Timer0_LED/DSP2833x_headers/include" --include_path="C:/F28335/ZQ28335_Timer0_LED/DSP2833x_headers/source" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="main_Timer0_LED_Timer1and2.d_raw"  "../main_Timer0_LED_Timer1and2.c"
+"../main_Timer0_LED_Timer1and2.c", line 23: warning #262-D: explicit type is missing ("int" assumed)
+"../main_Timer0_LED_Timer1and2.c", line 24: warning #262-D: explicit type is missing ("int" assumed)
+"../main_Timer0_LED_Timer1and2.c", line 25: warning #262-D: explicit type is missing ("int" assumed)
+"../main_Timer0_LED_Timer1and2.c", line 81: warning #225-D: function "InitStepMotorGpio" declared implicitly
+"../main_Timer0_LED_Timer1and2.c", line 128: warning #225-D: function "PhaseOn" declared implicitly
+"../main_Timer0_LED_Timer1and2.c", line 130: warning #225-D: function "PhaseOff" declared implicitly
+"../main_Timer0_LED_Timer1and2.c", line 18: warning #179-D: variable "key_value" was declared but never referenced
+"../main_Timer0_LED_Timer1and2.c", line 19: warning #179-D: variable "key_value1" was declared but never referenced
+Finished building: "../main_Timer0_LED_Timer1and2.c"
+ 
+Building target: "ZQ28335_Timer0_LED.out"
+Invoking: C2000 Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"ZQ28335_Timer0_LED.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="ZQ28335_Timer0_LED_linkInfo.xml" --rom_model -o "ZQ28335_Timer0_LED.out" "./KEY.obj" "./LED.obj" "./main_Timer0_LED_Timer1and2.obj" "./step.obj" "./DSP2833x_common/source/DSP2833x_ADC_cal.obj" "./DSP2833x_common/source/DSP2833x_CpuTimers.obj" "./DSP2833x_common/source/DSP2833x_DefaultIsr.obj" "./DSP2833x_common/source/DSP2833x_PieCtrl.obj" "./DSP2833x_common/source/DSP2833x_PieVect.obj" "./DSP2833x_common/source/DSP2833x_SysCtrl.obj" "./DSP2833x_common/source/DSP2833x_usDelay.obj" "./DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.obj" "../28335_RAM_lnk.cmd" "../DSP2833x_common/lib/IQmath.lib" "../DSP2833x_common/lib/IQmath_fpu32.lib" "../DSP2833x_common/lib/SFO_TI_Build.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5B.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5B_fpu.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5_fpu.lib" "../DSP2833x_common/lib/SFO_TI_Build_fpu.lib" "../DSP2833x_common/lib/rts2800_fpu32.lib" "../DSP2833x_headers/cmd/DSP2833x_Headers_nonBIOS.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ZQ28335_Timer0_LED.out"
+ 
+
+**** Build Finished ****

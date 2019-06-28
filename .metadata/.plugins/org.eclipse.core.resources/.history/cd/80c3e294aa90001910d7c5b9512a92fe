@@ -1,0 +1,43 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../28335_RAM_lnk.cmd 
+
+C_UPPER_SRCS += \
+../main_3x3_KEY.C 
+
+C_SRCS += \
+../LED.c 
+
+C_UPPER_DEPS += \
+./main_3x3_KEY.d 
+
+C_DEPS += \
+./LED.d 
+
+OBJS += \
+./LED.obj \
+./main_3x3_KEY.obj 
+
+OBJS__QUOTED += \
+"LED.obj" \
+"main_3x3_KEY.obj" 
+
+C_DEPS__QUOTED += \
+"LED.d" 
+
+C_UPPER_DEPS__QUOTED += \
+"main_3x3_KEY.d" 
+
+C_SRCS__QUOTED += \
+"../LED.c" 
+
+C_UPPER_SRCS__QUOTED += \
+"../main_3x3_KEY.C" 
+
+

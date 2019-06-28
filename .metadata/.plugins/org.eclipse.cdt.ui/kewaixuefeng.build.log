@@ -1,0 +1,61 @@
+
+**** Build of configuration Debug for project kewaixuefeng ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../user/main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="user/main.d_raw" --obj_directory="user"  "../user/main.c"
+"../user/main.c", line 62: warning: argument of type "Uint16 *" is incompatible
+          with parameter of type "float *"
+          start_sample(Voltage1,Voltage1,amplitude);
+                       ^
+ 
+"../user/main.c", line 62: warning: argument of type "Uint16 *" is incompatible
+          with parameter of type "float *"
+          start_sample(Voltage1,Voltage1,amplitude);
+                                ^
+ 
+"../user/main.c", line 95: remark: declaration hides variable "Voltage1"
+          (declared at line 8)
+  void start_sample(float *Voltage1,float *Voltage2,float *amplitude)
+                           ^
+ 
+"../user/main.c", line 95: remark: declaration hides variable "Voltage2"
+          (declared at line 9)
+  void start_sample(float *Voltage1,float *Voltage2,float *amplitude)
+                                           ^
+ 
+"../user/main.c", line 95: remark: declaration hides variable "amplitude"
+          (declared at line 10)
+  void start_sample(float *Voltage1,float *Voltage2,float *amplitude)
+                                                           ^
+ 
+"../user/main.c", line 111: remark: declaration hides variable "Voltage1"
+          (declared at line 8)
+  void cal_frequency(float *Voltage1,float *Voltage2,float *amplitude)
+                            ^
+ 
+"../user/main.c", line 111: remark: declaration hides variable "Voltage2"
+          (declared at line 9)
+  void cal_frequency(float *Voltage1,float *Voltage2,float *amplitude)
+                                            ^
+ 
+"../user/main.c", line 111: remark: declaration hides variable "amplitude"
+          (declared at line 10)
+  void cal_frequency(float *Voltage1,float *Voltage2,float *amplitude)
+                                                            ^
+ 
+"../user/main.c", line 11: warning: variable "phaseA" was set but never used
+  static float phaseA[400];
+               ^
+ 
+Finished building: "../user/main.c"
+ 
+Building target: "Example_2833xAdcSoc.out"
+Invoking: C2000 Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi -z -m"Example_2833xAdcSoc.map" --stack_size=0x380 --warn_sections -i"C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/lib" -i"C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" -i"C:/F28335/kewaixuefeng" -i"C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/lib" --priority --reread_libs --issue_remarks --verbose_diagnostics --xml_link_info="Example_2833xAdcSoc_linkInfo.xml" --entry_point=code_start --rom_model -o "Example_2833xAdcSoc.out" -lrts2800_fpu32_fast_supplement.lib -lrts2800_fpu32.lib "./DSP2833x_ADC_cal.obj" "./DSP2833x_Adc.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_SysCtrl.obj" "./DSP2833x_usDelay.obj" "./user/main.obj" "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/cmd/28335_RAM_lnk.cmd" "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/cmd/DSP2833x_Headers_nonBIOS.cmd"  -lIQmath_fpu32.lib 
+Finished building target: "Example_2833xAdcSoc.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="code" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="ziwei"/>
+			<item value="uchar"/>
+			<item value="delay_loop"/>
+			<item value="delay"/>
+			<item value="Sub_position"/>
+			<item value="Sub_position1"/>
+			<item value="198"/>
+			<item value="uint16_t"/>
+			<item value="TIMES"/>
+			<item value="DAC_PTR"/>
+			<item value="loop"/>
+			<item value="StepMode1"/>
+			<item value=" SOFT_SPI_RW"/>
+			<item value="UDELAY"/>
+			<item value="SET_LSDA_LOW"/>
+		</list>
+		<list key="replacehistory">
+			<item value="code"/>
+			<item value="unsigned char"/>
+			<item value="Delay_loop"/>
+			<item value="Sub_position1"/>
+			<item value=""/>
+			<item value="64"/>
+			<item value="Uint16"/>
+			<item value="32"/>
+			<item value="a%8"/>
+			<item value="StepMode1"/>
+			<item value="write_datas"/>
+			<item value="DELAY_US"/>
+			<item value="SDIO_L"/>
+			<item value="SCLK_H"/>
+			<item value="SCLK_L"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="356" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="1251" key="DIALOG_X_ORIGIN"/>
+		<item value="208" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

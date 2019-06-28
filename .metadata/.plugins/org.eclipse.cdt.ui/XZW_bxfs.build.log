@@ -1,0 +1,572 @@
+
+**** Build of configuration Debug for project XZW_bxfs ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_ADC_cal.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_ADC_cal.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_ADC_cal.asm"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_ADC_cal.asm"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_CodeStartBranch.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CodeStartBranch.asm"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CodeStartBranch.asm"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CpuTimers.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_CpuTimers.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CpuTimers.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CpuTimers.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_DefaultIsr.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_DefaultIsr.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_DefaultIsr.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_DefaultIsr.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_EPwm.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_EPwm.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_EPwm.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_EPwm.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/source/DSP2833x_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_GlobalVariableDefs.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/source/DSP2833x_GlobalVariableDefs.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/source/DSP2833x_GlobalVariableDefs.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_PieCtrl.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieCtrl.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieCtrl.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_PieVect.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieVect.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieVect.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_SysCtrl.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_SysCtrl.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_SysCtrl.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="DSP2833x_usDelay.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_usDelay.asm"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_usDelay.asm"
+ 
+Building file: "../user/Delay.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="user/Delay.d_raw" --obj_directory="user"  "../user/Delay.c"
+Finished building: "../user/Delay.c"
+ 
+Building file: "../user/KEY4x4.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="user/KEY4x4.d_raw" --obj_directory="user"  "../user/KEY4x4.c"
+"../user/KEY4x4.c", line 330: remark: array variable "data_array" assumed to
+          have one element
+  float data_array[];
+        ^
+ 
+Finished building: "../user/KEY4x4.c"
+ 
+Building file: "../user/LCD12864.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="user/LCD12864.d_raw" --obj_directory="user"  "../user/LCD12864.c"
+ 
+>> Compilation failure
+user/subdir_rules.mk:9: recipe for target 'user/LCD12864.obj' failed
+"../user/LCD12864.c", line 16: error: identifier "uchar" is undefined
+  uchar str_ENG[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0";
+  ^
+ 
+"../user/LCD12864.c", line 16: error: a value of type "char [64]" cannot be
+          used to initialize an entity of type "<error-type> []"
+  uchar str_ENG[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0";
+                  ^
+ 
+"../user/LCD12864.c", line 20: error: identifier "uchar" is undefined
+  uchar sign[]={
+  ^
+ 
+"../user/LCD12864.c", line 28: error: identifier "uchar" is undefined
+  uchar   jju[]={0xBEC5,0xBDAD,0xD1A7,0xD4BA};   //“九江学院”编码
+  ^
+ 
+"../user/LCD12864.c", line 29: error: identifier "uchar" is undefined
+  uchar   title[]={0xC8CE,0xD2E2,0xB2A8,0xD0CE,0xB7A2,0xC9FA,0xC6F7};//任意波形发生器
+  ^
+ 
+"../user/LCD12864.c", line 30: error: identifier "uchar" is undefined
+  uchar   inform1[]={0Xb5e7,0xd7d3};//电子
+  ^
+ 
+"../user/LCD12864.c", line 31: error: identifier "uchar" is undefined
+  uchar   inform2[]="A1612";
+  ^
+ 
+"../user/LCD12864.c", line 31: error: a value of type "char [6]" cannot be used
+          to initialize an entity of type "<error-type> []"
+  uchar   inform2[]="A1612";
+                    ^
+ 
+"../user/LCD12864.c", line 32: error: identifier "uchar" is undefined
+  uchar   inform3[]={0xB0E0};//班
+  ^
+ 
+"../user/LCD12864.c", line 33: error: identifier "uchar" is undefined
+  uchar   inform4[]="11.33";
+  ^
+ 
+"../user/LCD12864.c", line 33: error: a value of type "char [6]" cannot be used
+          to initialize an entity of type "<error-type> []"
+  uchar   inform4[]="11.33";
+                    ^
+ 
+"../user/LCD12864.c", line 34: error: identifier "uchar" is undefined
+  uchar   inform5[]={0xBAC5};//号
+  ^
+ 
+"../user/LCD12864.c", line 35: error: identifier "uchar" is undefined
+  uchar   inform6[]={0xD0DC,0xD7CF,0xCEA2};//熊紫微
+  ^
+ 
+"../user/LCD12864.c", line 36: error: identifier "uchar" is undefined
+  uchar   inform7[]={0xD3E1,0xBDE0};//俞洁
+  ^
+ 
+"../user/LCD12864.c", line 37: error: identifier "uchar" is undefined
+  uchar   inform8[]={0xC9E8,0xBCC6};//设计
+  ^
+ 
+"../user/LCD12864.c", line 38: error: identifier "uchar" is undefined
+  uchar   dataarr1[]={0xB5DA};//第
+  ^
+ 
+"../user/LCD12864.c", line 39: error: identifier "uchar" is undefined
+  uchar   dataarr[]={0xB8F6,0xB2A8,0xD0CE,0xCAFD,0xBEDD};//波形数据
+  ^
+ 
+"../user/LCD12864.c", line 42: error: identifier "uchar" is undefined
+  uchar  fig1[];
+  ^
+ 
+"../user/LCD12864.c", line 45: error: identifier "uchar" is undefined
+  uchar jju_fig8[];
+  ^
+ 
+"../user/LCD12864.c", line 48: error: identifier "uchar" is undefined
+  uchar  fig[512]={0};
+  ^
+ 
+"../user/LCD12864.c", line 51: error: identifier "uchar" is undefined
+  uchar i=0;
+  ^
+ 
+"../user/LCD12864.c", line 52: error: identifier "uchar" is undefined
+  uchar j=0;
+  ^
+ 
+"../user/LCD12864.c", line 53: error: identifier "uchar" is undefined
+  uchar temp;
+  ^
+ 
+"../user/LCD12864.c", line 57: error: identifier "uchar" is undefined
+  uchar point1[]={0,0};      // 画线的起点坐标(row,col)
+  ^
+ 
+"../user/LCD12864.c", line 58: error: identifier "uchar" is undefined
+  uchar point2[]={63,127};   // 画线的终点坐标
+  ^
+ 
+"../user/LCD12864.c", line 60: error: identifier "uchar" is undefined
+  uchar point3[]={63,0};      // 画线的起点坐标
+  ^
+ 
+"../user/LCD12864.c", line 61: error: identifier "uchar" is undefined
+  uchar point4[]={0,127};     // 画线的终点坐标
+  ^
+ 
+"../user/LCD12864.c", line 63: error: identifier "uchar" is undefined
+  uchar point5[]={0,0};      // 画线的起点坐标
+  ^
+ 
+"../user/LCD12864.c", line 64: error: identifier "uchar" is undefined
+  uchar point6[]={0,63};   // 画线的终点坐标
+  ^
+ 
+"../user/LCD12864.c", line 66: error: identifier "uchar" is undefined
+  uchar point7[]={63,0};      // 画线的起点坐标
+  ^
+ 
+"../user/LCD12864.c", line 67: error: identifier "uchar" is undefined
+  uchar point8[]={63,63};   // 画线的终点坐标
+  ^
+ 
+"../user/LCD12864.c", line 69: error: identifier "uchar" is undefined
+  uchar point9[]={63,0};      // 画线的起点坐标
+  ^
+ 
+"../user/LCD12864.c", line 70: error: identifier "uchar" is undefined
+  uchar point10[]={0,63};     // 画线的终点坐标
+  ^
+ 
+"../user/LCD12864.c", line 73: error: identifier "uchar" is undefined
+  uchar AC_TABLE[]={
+  ^
+ 
+"../user/LCD12864.c", line 118: error: identifier "uchar" is undefined
+  void DispCHN(uchar row,uchar col,uchar *puts,Uint16 nums);
+               ^
+ 
+"../user/LCD12864.c", line 118: error: identifier "uchar" is undefined
+  void DispCHN(uchar row,uchar col,uchar *puts,Uint16 nums);
+                         ^
+ 
+"../user/LCD12864.c", line 118: error: identifier "uchar" is undefined
+  void DispCHN(uchar row,uchar col,uchar *puts,Uint16 nums);
+                                   ^
+ 
+"../user/LCD12864.c", line 128: error: identifier "uchar" is undefined
+  void DispENG(uchar row,uchar col,uchar *puts,Uint16 nums);
+               ^
+ 
+"../user/LCD12864.c", line 128: error: identifier "uchar" is undefined
+  void DispENG(uchar row,uchar col,uchar *puts,Uint16 nums);
+                         ^
+ 
+"../user/LCD12864.c", line 128: error: identifier "uchar" is undefined
+  void DispENG(uchar row,uchar col,uchar *puts,Uint16 nums);
+                                   ^
+ 
+"../user/LCD12864.c", line 136: error: identifier "uchar" is undefined
+  void DispFigData(uchar  row, uchar  col, uchar  *figdata);
+                   ^
+ 
+"../user/LCD12864.c", line 136: error: identifier "uchar" is undefined
+  void DispFigData(uchar  row, uchar  col, uchar  *figdata);
+                               ^
+ 
+"../user/LCD12864.c", line 136: error: identifier "uchar" is undefined
+  void DispFigData(uchar  row, uchar  col, uchar  *figdata);
+                                           ^
+ 
+"../user/LCD12864.c", line 143: error: identifier "uchar" is undefined
+  void DispFig(uchar *fig);
+               ^
+ 
+"../user/LCD12864.c", line 155: error: identifier "uchar" is undefined
+  void DispFigUd(uchar *fig);
+                 ^
+ 
+"../user/LCD12864.c", line 162: error: identifier "uchar" is undefined
+  void DispFig8(uchar *fig);
+                ^
+ 
+"../user/LCD12864.c", line 170: error: identifier "uchar" is undefined
+  void GetDotData(uchar row, uchar col);
+                  ^
+ 
+"../user/LCD12864.c", line 170: error: identifier "uchar" is undefined
+  void GetDotData(uchar row, uchar col);
+                             ^
+ 
+"../user/LCD12864.c", line 178: error: identifier "uchar" is undefined
+  void DispDot(uchar row, uchar col,uchar *fig);
+               ^
+ 
+"../user/LCD12864.c", line 178: error: identifier "uchar" is undefined
+  void DispDot(uchar row, uchar col,uchar *fig);
+                          ^
+ 
+"../user/LCD12864.c", line 178: error: identifier "uchar" is undefined
+  void DispDot(uchar row, uchar col,uchar *fig);
+                                    ^
+ 
+"../user/LCD12864.c", line 186: error: identifier "uchar" is undefined
+  void GetLineData(uchar *start, uchar *end);
+                   ^
+ 
+"../user/LCD12864.c", line 186: error: identifier "uchar" is undefined
+  void GetLineData(uchar *start, uchar *end);
+                                 ^
+ 
+"../user/LCD12864.c", line 194: error: identifier "uchar" is undefined
+  void DispLine(uchar *start, uchar *end, uchar *fig);
+                ^
+ 
+"../user/LCD12864.c", line 194: error: identifier "uchar" is undefined
+  void DispLine(uchar *start, uchar *end, uchar *fig);
+                              ^
+ 
+"../user/LCD12864.c", line 194: error: identifier "uchar" is undefined
+  void DispLine(uchar *start, uchar *end, uchar *fig);
+                                          ^
+ 
+"../user/LCD12864.c", line 208: error: identifier "uchar" is undefined
+  void DispDots(uchar row,uchar col,uchar *figdata,Uint16 nums);
+                ^
+ 
+"../user/LCD12864.c", line 208: error: identifier "uchar" is undefined
+  void DispDots(uchar row,uchar col,uchar *figdata,Uint16 nums);
+                          ^
+ 
+"../user/LCD12864.c", line 208: error: identifier "uchar" is undefined
+  void DispDots(uchar row,uchar col,uchar *figdata,Uint16 nums);
+                                    ^
+ 
+"../user/LCD12864.c", line 223: error: declaration is incompatible with "void
+          delay_loop(void)" (declared at line 202 of
+          "C:\ti\c2000\C2000Ware_1_00_06_00\device_support\f2833x\common\includ
+          e\DSP2833x_GlobalPrototypes.h")
+  void delay_loop(Uint32 x);
+       ^
+ 
+"../user/LCD12864.c", line 266: remark: declaration hides variable "i"
+          (declared at line 51)
+      Uint16 i = 0;
+             ^
+ 
+"../user/LCD12864.c", line 267: error: identifier "SDATA_OUT" is undefined
+      SDATA_OUT;
+      ^
+ 
+"../user/LCD12864.c", line 268: error: identifier "SCLK_quarter" is undefined
+      SCLK_quarter;
+      ^
+ 
+"../user/LCD12864.c", line 271: error: identifier "SCLK_0" is undefined
+          SCLK_0;
+          ^
+ 
+"../user/LCD12864.c", line 273: error: identifier "SDATA" is undefined
+          SDATA=(0x1&((x)>>(7-i)));  //先把高位移出然后发送
+          ^
+ 
+"../user/LCD12864.c", line 276: error: identifier "SCLK_1" is undefined
+          SCLK_1;                    //把时间改成上升沿锁存的
+          ^
+ 
+"../user/LCD12864.c", line 277: error: identifier "SCLK_half" is undefined
+          SCLK_half;
+          ^
+ 
+"../user/LCD12864.c", line 281: error: identifier "SDATA" is undefined
+      SDATA=0;
+      ^
+ 
+"../user/LCD12864.c", line 299: error: identifier "CS_1" is undefined
+      CS_1;
+      ^
+ 
+"../user/LCD12864.c", line 308: error: identifier "CS_0" is undefined
+      CS_0;
+      ^
+ 
+"../user/LCD12864.c", line 309: error: identifier "execute_72us" is undefined
+      execute_72us;
+      ^
+ 
+"../user/LCD12864.c", line 320: error: identifier "CS_1" is undefined
+      CS_1;
+      ^
+ 
+"../user/LCD12864.c", line 330: error: identifier "CS_0" is undefined
+      CS_0;
+      ^
+ 
+"../user/LCD12864.c", line 331: error: identifier "execute_72us" is undefined
+      execute_72us;
+      ^
+ 
+"../user/LCD12864.c", line 353: error: identifier "uchar" is undefined
+       uchar i;
+       ^
+ 
+"../user/LCD12864.c", line 353: remark: declaration hides variable "i"
+          (declared at line 51)
+       uchar i;
+             ^
+ 
+"../user/LCD12864.c", line 367: error: identifier "uchar" is undefined
+       uchar i,j;
+       ^
+ 
+"../user/LCD12864.c", line 367: remark: declaration hides variable "i"
+          (declared at line 51)
+       uchar i,j;
+             ^
+ 
+"../user/LCD12864.c", line 367: remark: declaration hides variable "j"
+          (declared at line 52)
+       uchar i,j;
+               ^
+ 
+"../user/LCD12864.c", line 383: error: identifier "uchar" is undefined
+  void DispCHN(uchar row,uchar col,uchar *puts,Uint16 nums)
+               ^
+ 
+"../user/LCD12864.c", line 383: error: identifier "uchar" is undefined
+  void DispCHN(uchar row,uchar col,uchar *puts,Uint16 nums)
+                         ^
+ 
+"../user/LCD12864.c", line 383: error: identifier "uchar" is undefined
+  void DispCHN(uchar row,uchar col,uchar *puts,Uint16 nums)
+                                   ^
+ 
+"../user/LCD12864.c", line 385: remark: declaration hides variable "i"
+          (declared at line 51)
+      Uint16 i=0;
+             ^
+ 
+"../user/LCD12864.c", line 386: remark: declaration hides variable "temp"
+          (declared at line 53)
+      Uint16 temp=0;
+             ^
+ 
+"../user/LCD12864.c", line 390: error: identifier "BASIC_SET" is undefined
+      WriteLcdCmd(BASIC_SET);      //8BitMCU,基本指令集合
+                  ^
+ 
+"../user/LCD12864.c", line 424: error: identifier "uchar" is undefined
+  void DispENG(uchar row,uchar col,uchar *puts,Uint16 nums)
+               ^
+ 
+"../user/LCD12864.c", line 424: error: identifier "uchar" is undefined
+  void DispENG(uchar row,uchar col,uchar *puts,Uint16 nums)
+                         ^
+ 
+"../user/LCD12864.c", line 424: error: identifier "uchar" is undefined
+  void DispENG(uchar row,uchar col,uchar *puts,Uint16 nums)
+                                   ^
+ 
+"../user/LCD12864.c", line 426: remark: declaration hides variable "i"
+          (declared at line 51)
+      Uint16 i=0;
+             ^
+ 
+"../user/LCD12864.c", line 481: error: identifier "uchar" is undefined
+  void DispFigData(uchar row, uchar col, uchar *figdata)
+                   ^
+ 
+"../user/LCD12864.c", line 481: error: identifier "uchar" is undefined
+  void DispFigData(uchar row, uchar col, uchar *figdata)
+                              ^
+ 
+"../user/LCD12864.c", line 481: error: identifier "uchar" is undefined
+  void DispFigData(uchar row, uchar col, uchar *figdata)
+                                         ^
+ 
+"../user/LCD12864.c", line 483: error: identifier "uchar" is undefined
+      uchar row_lcd=0;
+      ^
+ 
+"../user/LCD12864.c", line 484: error: identifier "uchar" is undefined
+      uchar col_lcd=0;
+      ^
+ 
+"../user/LCD12864.c", line 521: error: identifier "uchar" is undefined
+  void DispFig(uchar *fig)
+               ^
+ 
+"../user/LCD12864.c", line 521: remark: declaration hides variable "fig"
+          (declared at line 48)
+  void DispFig(uchar *fig)
+                      ^
+ 
+"../user/LCD12864.c", line 560: error: identifier "uchar" is undefined
+  void DispFigUd(uchar *fig)
+                 ^
+ 
+"../user/LCD12864.c", line 560: remark: declaration hides variable "fig"
+          (declared at line 48)
+  void DispFigUd(uchar *fig)
+                        ^
+ 
+"../user/LCD12864.c", line 576: error: identifier "uchar" is undefined
+  void DispFig8(uchar *fig)
+                ^
+ 
+"../user/LCD12864.c", line 576: remark: declaration hides variable "fig"
+          (declared at line 48)
+  void DispFig8(uchar *fig)
+                       ^
+ 
+"../user/LCD12864.c", line 578: error: identifier "uchar" is undefined
+       uchar i,j;
+       ^
+ 
+"../user/LCD12864.c", line 578: remark: declaration hides variable "i"
+          (declared at line 51)
+       uchar i,j;
+             ^
+ 
+"../user/LCD12864.c", line 578: remark: declaration hides variable "j"
+          (declared at line 52)
+       uchar i,j;
+               ^
+ 
+"../user/LCD12864.c", line 613: error: identifier "uchar" is undefined
+       uchar us,usn;
+       ^
+ 
+"../user/LCD12864.c", line 635: remark: declaration hides variable "i"
+          (declared at line 51)
+       Uint16 i;
+              ^
+ 
+"../user/LCD12864.c", line 658: remark: declaration hides variable "i"
+          (declared at line 51)
+      Uint32      i;
+                  ^
+ 
+"../user/LCD12864.c", line 663: error: identifier "uchar" is undefined
+  uchar fig1[]={
+  ^
+ 
+"../user/LCD12864.c", line 704: error: identifier "uchar" is undefined
+  uchar jju_fig8[]={
+  ^
+ 
+"../user/LCD12864.c", line 774: error: identifier "RST_0" is undefined
+      RST_0;
+      ^
+ 
+"../user/LCD12864.c", line 776: error: identifier "RST_1" is undefined
+      RST_1;
+      ^
+ 
+"../user/LCD12864.c", line 796: error: identifier "uchar" is undefined
+  uchar mune11[]={0xB0B4,0xC8B7,0xC8CF,0xBCFC,0xB8F6,0xCAE4,0xCAFD,0xBEDC};//按确认键输出波形
+  ^
+ 
+"../user/LCD12864.c", line 805: error: identifier "uchar" is undefined
+  uchar mune1[]={0xCAE4,0xC8EB,0xCAFD,0xBEDD,0xB7BD,0xCABD};//输入数据方式
+  ^
+ 
+"../user/LCD12864.c", line 806: error: identifier "uchar" is undefined
+  uchar mune2[]={0XCBE6,0xBBFA,0xB7BD,0xCABD};//随机方式
+  ^
+ 
+"../user/LCD12864.c", line 807: error: identifier "uchar" is undefined
+  uchar mune3[]={0xBCFC,0xC8EB,0xB7BD,0xCABD};//键入方式
+  ^
+ 
+Error limit reached.
+100 errors detected in the compilation of "../user/LCD12864.c".
+Compilation terminated.
+gmake: *** [user/LCD12864.obj] Error 1
+Building file: "../user/main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/my_EPwmUpAQ/user" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" --define="_DEBUG" --define="LARGE_MODEL" -g --diag_suppress=10063 --diag_warning=225 --issue_remarks --verbose_diagnostics --quiet --abi=coffabi --preproc_with_compile --preproc_dependency="user/main.d_raw" --obj_directory="user"  "../user/main.c"
+ 
+>> Compilation failure
+user/subdir_rules.mk:9: recipe for target 'user/main.obj' failed
+"../user/main.c", line 5: fatal error: cannot open source file "F28x_Project.h"
+  #include "F28x_Project.h"
+                           ^
+ 
+1 catastrophic error detected in the compilation of "../user/main.c".
+Compilation terminated.
+gmake: *** [user/main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

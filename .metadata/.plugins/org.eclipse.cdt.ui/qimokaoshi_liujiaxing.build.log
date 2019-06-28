@@ -1,0 +1,36 @@
+
+**** Build of configuration Debug for project qimokaoshi_liujiaxing ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../KEY.C"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/F28335/qimokaoshi_liujiaxing/DSP2833x_common/include" --include_path="C:/F28335/qimokaoshi_liujiaxing/DSP2833x_headers/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="KEY.d_raw"  "../KEY.C"
+Finished building: "../KEY.C"
+ 
+Building file: "../Timer.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --include_path="C:/F28335/qimokaoshi_liujiaxing/DSP2833x_common/include" --include_path="C:/F28335/qimokaoshi_liujiaxing/DSP2833x_headers/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'Timer.obj' failed
+"../Timer.c", line 14: error #131: expected a "{"
+"../Timer.c", line 26: warning #12-D: parsing restarts here after previous syntax error
+"../Timer.c", line 39: warning #225-D: function "InitBuzzGpio" declared implicitly
+"../Timer.c", line 42: error #20: identifier "cpu_timer0_isr" is undefined
+"../Timer.c", line 55: error #20: identifier "key_val" is undefined
+"../Timer.c", line 66: warning #161-D: declaration is incompatible with previous "InitBuzzGpio" (declared at line 39)
+"../Timer.c", line 79: error #20: identifier "real_val" is undefined
+"../Timer.c", line 89: error #20: identifier "buzz_flag" is undefined
+"../Timer.c", line 99: error #20: identifier "buzz_flag" is undefined
+"../Timer.c", line 103: error #20: identifier "buzz_flag" is undefined
+"../Timer.c", line 77: warning #179-D: variable "a" was declared but never referenced
+"../Timer.c", line 107: error #249: function "key_deal" has already been defined
+"../Timer.c", line 116: error #20: identifier "buzz_flag" is undefined
+"../Timer.c", line 117: error #20: identifier "real_val" is undefined
+"../Timer.c", line 118: warning #225-D: function "DispENG" declared implicitly
+10 errors detected in the compilation of "../Timer.c".
+gmake: *** [Timer.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

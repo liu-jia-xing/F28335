@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ZQ28335_XINT/F28336.cmd&apos; to &apos;F28335.cmd&apos;" description="Rename resource &apos;F28336.cmd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="F28336.cmd" name="F28335.cmd" stamp="1559646634244" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ZQ28335_XINT/F28335_jjl.cmd&apos; to &apos;F28335.cmd&apos;" description="Rename resource &apos;F28335_jjl.cmd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="F28335_jjl.cmd" name="F28335.cmd" stamp="1559646703981" updateReferences="true"/>
+</session>

@@ -1,0 +1,13 @@
+
+**** Build of configuration Debug for project final ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building target: "final.out"
+Invoking: C2000 Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"final.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="final_linkInfo.xml" --rom_model -o "final.out" "./KEY.obj" "./LCD12864.obj" "./LED.obj" "./Timer.obj" "./DSP2833x_common/source/DSP2833x_ADC_cal.obj" "./DSP2833x_common/source/DSP2833x_Adc.obj" "./DSP2833x_common/source/DSP2833x_CSMPasswords.obj" "./DSP2833x_common/source/DSP2833x_CodeStartBranch.obj" "./DSP2833x_common/source/DSP2833x_CpuTimers.obj" "./DSP2833x_common/source/DSP2833x_DBGIER.obj" "./DSP2833x_common/source/DSP2833x_DMA.obj" "./DSP2833x_common/source/DSP2833x_DefaultIsr.obj" "./DSP2833x_common/source/DSP2833x_DisInt.obj" "./DSP2833x_common/source/DSP2833x_ECan.obj" "./DSP2833x_common/source/DSP2833x_ECap.obj" "./DSP2833x_common/source/DSP2833x_EPwm.obj" "./DSP2833x_common/source/DSP2833x_EQep.obj" "./DSP2833x_common/source/DSP2833x_Gpio.obj" "./DSP2833x_common/source/DSP2833x_I2C.obj" "./DSP2833x_common/source/DSP2833x_Mcbsp.obj" "./DSP2833x_common/source/DSP2833x_MemCopy.obj" "./DSP2833x_common/source/DSP2833x_PieCtrl.obj" "./DSP2833x_common/source/DSP2833x_PieVect.obj" "./DSP2833x_common/source/DSP2833x_Sci.obj" "./DSP2833x_common/source/DSP2833x_Spi.obj" "./DSP2833x_common/source/DSP2833x_SysCtrl.obj" "./DSP2833x_common/source/DSP2833x_Xintf.obj" "./DSP2833x_common/source/DSP2833x_usDelay.obj" "./DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.obj" "../F28335_jjl.cmd" "../DSP2833x_common/lib/IQmath.lib" "../DSP2833x_common/lib/IQmath_fpu32.lib" "../DSP2833x_common/lib/SFO_TI_Build.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5B.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5B_fpu.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5_fpu.lib" "../DSP2833x_common/lib/SFO_TI_Build_fpu.lib" "../DSP2833x_common/lib/rts2800_fpu32.lib" "../DSP2833x_headers/cmd/DSP2833x_Headers_nonBIOS.cmd"  -llibc.a 
+<Linking>
+Finished building target: "final.out"
+ 
+
+**** Build Finished ****

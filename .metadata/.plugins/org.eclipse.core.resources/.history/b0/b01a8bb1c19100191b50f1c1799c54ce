@@ -1,0 +1,18 @@
+/*
+ * BUzz.c
+ *
+ *  Created on: 2019年6月18日
+ *      Author: L9379
+ */
+#include "BUzz.h"
+
+/*****************************************初始化IO端口************************************************/
+void InitBuzzGpio(void)
+{
+    EALLOW;
+    GpioCtrlRegs.GPBMUX1.bit.GPIO35 = 0;                                    // GPIO35 = GPIO
+    GpioCtrlRegs.GPBDIR.bit.GPIO35 = 1;   // GPIO35 = output
+    GpioCtrlRegs.GPBPUD.bit.GPIO35 = 0;                                     // Enable pullup on GPIO35
+    GpioDataRegs.GPBSET.bit.GPIO35 = 1;                                      // Load output latch
+    EDIS;
+}

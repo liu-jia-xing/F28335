@@ -1,0 +1,62 @@
+
+**** Build of configuration Debug for project sci_test_01 ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_ADC_cal.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_ADC_cal.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_ADC_cal.asm"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_ADC_cal.asm"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_CodeStartBranch.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CodeStartBranch.asm"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_CodeStartBranch.asm"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_DefaultIsr.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_DefaultIsr.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_DefaultIsr.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_DefaultIsr.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/source/DSP2833x_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_GlobalVariableDefs.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/source/DSP2833x_GlobalVariableDefs.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/source/DSP2833x_GlobalVariableDefs.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_PieCtrl.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieCtrl.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieCtrl.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_PieVect.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieVect.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_PieVect.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_Sci.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_Sci.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_Sci.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_Sci.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_SysCtrl.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_SysCtrl.c"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_SysCtrl.c"
+ 
+Building file: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="DSP2833x_usDelay.d_raw"  "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_usDelay.asm"
+Finished building: "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/source/DSP2833x_usDelay.asm"
+ 
+Building file: "../sci_test_01_main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/include" --include_path="C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/include" -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks --preproc_with_compile --preproc_dependency="sci_test_01_main.d_raw"  "../sci_test_01_main.c"
+Finished building: "../sci_test_01_main.c"
+ 
+Building target: "Example_2833xSci_echoback.out"
+Invoking: C2000 Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --define="_DEBUG" --define="LARGE_MODEL" --quiet --diag_warning=225 --diag_suppress=10063 --issue_remarks -z -m"Example_2833xSci_echoback.map" --stack_size=0x380 --warn_sections -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" -i"C:/F28335/sci_test_01" -i"C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/lib" -i"C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/IQmath/c28/lib" -i"C:/ti/c2000/C2000Ware_1_00_06_00/libraries/math/FPUfastRTS/c28/lib" --reread_libs --priority --xml_link_info="Example_2833xSci_echoback_linkInfo.xml" --entry_point=code_start --rom_model -o "Example_2833xSci_echoback.out" "./DSP2833x_ADC_cal.obj" "./DSP2833x_CodeStartBranch.obj" "./DSP2833x_DefaultIsr.obj" "./DSP2833x_GlobalVariableDefs.obj" "./DSP2833x_PieCtrl.obj" "./DSP2833x_PieVect.obj" "./DSP2833x_Sci.obj" "./DSP2833x_SysCtrl.obj" "./DSP2833x_usDelay.obj" "./sci_test_01_main.obj" "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/common/cmd/28335_RAM_lnk.cmd" "C:/ti/c2000/C2000Ware_1_00_06_00/device_support/f2833x/headers/cmd/DSP2833x_Headers_nonBIOS.cmd"  -lrts2800_fpu32.lib -lIQmath_fpu32.lib -lrts2800_fpu32_fast_supplement.lib 
+Finished building target: "Example_2833xSci_echoback.out"
+ 
+
+**** Build Finished ****

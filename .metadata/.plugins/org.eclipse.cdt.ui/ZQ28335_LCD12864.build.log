@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project ZQ28335_LCD12864 ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../LCD12864.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/ZQ28335_LCD12864/DSP2833x_common/include" --include_path="C:/F28335/ZQ28335_LCD12864/DSP2833x_common/source" --include_path="C:/F28335/ZQ28335_LCD12864/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="LCD12864.d_raw"  "../LCD12864.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'LCD12864.obj' failed
+"../LCD12864.c", line 662: error #20: identifier "Key" is undefined
+1 error detected in the compilation of "../LCD12864.c".
+gmake: *** [LCD12864.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

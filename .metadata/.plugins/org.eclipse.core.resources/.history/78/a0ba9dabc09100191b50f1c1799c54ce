@@ -1,0 +1,128 @@
+//程序功能：
+//   LED1~LED4在Timer0控制下定时闪烁，定时中断周期为0.5秒。
+//控制方式：
+//   定时中断控制
+//硬件电路：
+//    GPIO0~3分别接LED1~4.
+
+#include "DSP2833x_Device.h"     // DSP2833x Headerfile Include File
+#include "DSP2833x_Examples.h"   // DSP2833x Examples Include File
+#include "LED_M.h"               // LED状态宏定义
+#include "LED.h"
+#include "LCD12864.h"
+#include "KEY.h"
+#include "BUzz.h"
+extern Uint16 RamfuncsLoadStart;
+extern Uint16 RamfuncsLoadEnd;
+extern Uint16 RamfuncsRunStart;
+
+unsigned char key_val=0;
+unsigned char real_val=0;
+interrupt void cpu_timer0_isr(void);
+
+unsigned char buzz_flag=0;
+void main(void)
+{
+	InitSysCtrl();
+	MemCopy(&RamfuncsLoadStart, &RamfuncsLoadEnd, &RamfuncsRunStart);
+	InitFlash();
+	InitLedGpio(); // LED引脚初始化
+	InitKeyGpio(); // 按键引脚初始化
+	DINT;
+	InitPieCtrl();
+	IER = 0x0000;
+	IFR = 0x0000;
+	InitPieVectTable();
+	InitLcdGpio(); // 按键引脚初始化，使用GPIO2~5。
+	InitLcd();
+	InitBuzzGpio();
+	// 初始化TIMER0功能
+	EALLOW;
+	PieVectTable.TINT0 = &cpu_timer0_isr;
+	EDIS;
+	InitCpuTimers();
+	//prd0=1/(freq0*2);     // 一个时钟周期，前半为H电平，后半为L电平。
+	ConfigCpuTimer(&CpuTimer0, 150,1000);//定时周期单位：us
+	IER |= M_INT1;     // 使能TINT0(TINT0在INT1的第7个)
+	PieCtrlRegs.PIEIER1.bit.INTx7 = 1;
+	EINT;  // 使能全局中断(EINT)
+	ERTM;  // 使能实时中断(ERTM)
+	StartCpuTimer0(); // 启动定时器
+	init_led();
+	while(1)
+	{
+	    key_val= GetKey();  // 得到按键Key的值
+	    key_deal(key_val);
+	    TestLcd();
+	    // 补充按键功能
+	/*    if(buzz_flag==3)
+	        StopCpuTimer0();*/
+	   // DSP28x_usDelay(100000);  // 两次检测之间需0.1s间隔以上，才能准确检测，可以执行其他代码作延迟。
+	}
+}
+
+
+
+interrupt void cpu_timer0_isr(void)
+{    unsigned char a=0;
+   CpuTimer0.InterruptCount++;
+   if(real_val==1)
+   {
+   if(CpuTimer0.InterruptCount<500)
+       GEN_BUZZ_CLK;
+   else if(CpuTimer0.InterruptCount<1000)
+       {
+       GpioDataRegs.GPBCLEAR.bit.GPIO35 = 1;
+       }
+   else{
+       CpuTimer0.InterruptCount=0;
+       buzz_flag++;
+       }
+   }
+   if(real_val==2){
+      if( CpuTimer0.InterruptCount<1000)
+          GEN_BUZZ_CLK;
+      else if( CpuTimer0.InterruptCount<2000)
+          GpioDataRegs.GPBCLEAR.bit.GPIO35 = 1;
+      else{
+          CpuTimer0.InterruptCount=0;
+          buzz_flag++;
+      }
+      }
+   PieCtrlRegs.PIEACK.all = PIEACK_GROUP1;
+   if(buzz_flag==3)
+              StopCpuTimer0();
+}
+
+void key_deal(unsigned char com)
+{
+    switch(com)
+    {
+    case 1:StopCpuTimer0();
+            ConfigCpuTimer(&CpuTimer0, 150,500);//定时周期单位：us
+            LED1_ON;
+            LED2_OFF;
+            StartCpuTimer0();
+            buzz_flag=0;
+            real_val=1;
+            DispENG(0,6,"1",1);
+        break;
+    case 2:
+        LED1_OFF;
+        LED2_ON;
+        StopCpuTimer0();
+        ConfigCpuTimer(&CpuTimer0, 150,250);//定时周期单位：us
+        StartCpuTimer0();
+        real_val=2;
+        buzz_flag=0;
+        DispENG(0,6,"2",1);
+        break;
+    case 4:StopCpuTimer0();
+    init_led();
+    DispENG(0,6,"0",1);break;
+    default:break;
+    }
+}
+
+
+

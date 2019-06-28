@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project ZQ28335_keshe_PWM1Wave ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main_PWM1Out.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/ZQ28335_keshe_PWM1Wave/DSP2833x_common/include" --include_path="C:/F28335/ZQ28335_keshe_PWM1Wave/DSP2833x_common/source" --include_path="C:/F28335/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/include" --include_path="C:/F28335/ZQ28335_keshe_PWM1Wave/DSP2833x_headers/source" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="main_PWM1Out.d_raw"  "../main_PWM1Out.c"
+Finished building: "../main_PWM1Out.c"
+ 
+Building target: "ZQ28335_keshe_PWM1Wave.out"
+Invoking: C2000 Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --diag_warning=225 --display_error_number --diag_wrap=off -z --stack_size=0x300 -m"ZQ28335_keshe_PWM1Wave.map" --warn_sections -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --reread_libs --display_error_number --diag_wrap=off --xml_link_info="ZQ28335_keshe_PWM1Wave_linkInfo.xml" --rom_model -o "ZQ28335_keshe_PWM1Wave.out" "./KEY.obj" "./LCD.obj" "./PWM1Out.obj" "./main_PWM1Out.obj" "./DSP2833x_common/source/DSP2833x_ADC_cal.obj" "./DSP2833x_common/source/DSP2833x_Adc.obj" "./DSP2833x_common/source/DSP2833x_CpuTimers.obj" "./DSP2833x_common/source/DSP2833x_DefaultIsr.obj" "./DSP2833x_common/source/DSP2833x_DisInt.obj" "./DSP2833x_common/source/DSP2833x_ECap.obj" "./DSP2833x_common/source/DSP2833x_EPwm.obj" "./DSP2833x_common/source/DSP2833x_EQep.obj" "./DSP2833x_common/source/DSP2833x_Gpio.obj" "./DSP2833x_common/source/DSP2833x_PieCtrl.obj" "./DSP2833x_common/source/DSP2833x_PieVect.obj" "./DSP2833x_common/source/DSP2833x_SysCtrl.obj" "./DSP2833x_common/source/DSP2833x_usDelay.obj" "./DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.obj" "../28335_RAM_lnk.cmd" "../DSP2833x_headers/cmd/DSP2833x_Headers_nonBIOS.cmd"  -llibc.a 
+<Linking>
+Finished building target: "ZQ28335_keshe_PWM1Wave.out"
+ 
+
+**** Build Finished ****

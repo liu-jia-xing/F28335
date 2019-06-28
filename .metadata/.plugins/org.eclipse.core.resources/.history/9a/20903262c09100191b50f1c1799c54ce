@@ -1,0 +1,14 @@
+/*
+ * LED.h
+ *
+ *  Created on: 2016-10-11
+ *      Author: Administrator
+ */
+
+#ifndef LED_H_
+#define LED_H_
+#include "DSP2833x_Device.h"     // DSP2833x Headerfile Include File
+#include "DSP2833x_Examples.h"   // DSP2833x Examples Include File
+void InitLedGpio(void);
+void init_led()
+#endif /* LED_H_ */

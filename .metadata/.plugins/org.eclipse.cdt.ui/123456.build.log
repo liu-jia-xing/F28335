@@ -1,0 +1,148 @@
+
+**** Build of configuration Debug for project 123456 ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../LED.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="LED.d_raw"  "../LED.c"
+Finished building: "../LED.c"
+ 
+Building file: "../Timer.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+Finished building: "../Timer.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_ADC_cal.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_ADC_cal.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_ADC_cal.asm"
+Finished building: "../DSP2833x_common/source/DSP2833x_ADC_cal.asm"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_Adc.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_Adc.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_Adc.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_Adc.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_CSMPasswords.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_CSMPasswords.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_CSMPasswords.asm"
+Finished building: "../DSP2833x_common/source/DSP2833x_CSMPasswords.asm"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_CodeStartBranch.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_CodeStartBranch.asm"
+Finished building: "../DSP2833x_common/source/DSP2833x_CodeStartBranch.asm"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_CpuTimers.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_CpuTimers.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_CpuTimers.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_CpuTimers.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_DBGIER.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_DBGIER.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_DBGIER.asm"
+Finished building: "../DSP2833x_common/source/DSP2833x_DBGIER.asm"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_DMA.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_DMA.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_DMA.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_DMA.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_DefaultIsr.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_DefaultIsr.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_DefaultIsr.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_DefaultIsr.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_DisInt.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_DisInt.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_DisInt.asm"
+Finished building: "../DSP2833x_common/source/DSP2833x_DisInt.asm"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_ECan.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_ECan.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_ECan.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_ECan.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_ECap.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_ECap.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_ECap.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_ECap.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_EPwm.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_EPwm.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_EPwm.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_EPwm.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_EQep.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_EQep.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_EQep.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_EQep.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_Gpio.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_Gpio.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_Gpio.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_Gpio.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_I2C.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_I2C.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_I2C.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_I2C.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_Mcbsp.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_Mcbsp.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_Mcbsp.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_Mcbsp.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_MemCopy.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_MemCopy.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_MemCopy.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_MemCopy.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_PieCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_PieCtrl.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_PieCtrl.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_PieCtrl.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_PieVect.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_PieVect.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_PieVect.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_PieVect.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_Sci.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_Sci.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_Sci.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_Sci.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_Spi.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_Spi.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_Spi.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_Spi.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_SysCtrl.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_SysCtrl.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_SysCtrl.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_Xintf.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_Xintf.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_Xintf.c"
+Finished building: "../DSP2833x_common/source/DSP2833x_Xintf.c"
+ 
+Building file: "../DSP2833x_common/source/DSP2833x_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_common/source/DSP2833x_usDelay.d_raw" --obj_directory="DSP2833x_common/source"  "../DSP2833x_common/source/DSP2833x_usDelay.asm"
+Finished building: "../DSP2833x_common/source/DSP2833x_usDelay.asm"
+ 
+Building file: "../DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --include_path="C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/F28335/123456/DSP2833x_common/include" --include_path="C:/F28335/123456/DSP2833x_headers/include" --diag_warning=225 --display_error_number --diag_wrap=off --preproc_with_compile --preproc_dependency="DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.d_raw" --obj_directory="DSP2833x_headers/source"  "../DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.c"
+Finished building: "../DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.c"
+ 
+Building target: "123456.out"
+Invoking: C2000 Linker
+"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --diag_warning=225 --display_error_number --diag_wrap=off -z --stack_size=0x300 -m"123456.map" --warn_sections -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs900/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --reread_libs --display_error_number --diag_wrap=off --xml_link_info="123456_linkInfo.xml" --rom_model -o "123456.out" "./LED.obj" "./Timer.obj" "./DSP2833x_common/source/DSP2833x_ADC_cal.obj" "./DSP2833x_common/source/DSP2833x_Adc.obj" "./DSP2833x_common/source/DSP2833x_CSMPasswords.obj" "./DSP2833x_common/source/DSP2833x_CodeStartBranch.obj" "./DSP2833x_common/source/DSP2833x_CpuTimers.obj" "./DSP2833x_common/source/DSP2833x_DBGIER.obj" "./DSP2833x_common/source/DSP2833x_DMA.obj" "./DSP2833x_common/source/DSP2833x_DefaultIsr.obj" "./DSP2833x_common/source/DSP2833x_DisInt.obj" "./DSP2833x_common/source/DSP2833x_ECan.obj" "./DSP2833x_common/source/DSP2833x_ECap.obj" "./DSP2833x_common/source/DSP2833x_EPwm.obj" "./DSP2833x_common/source/DSP2833x_EQep.obj" "./DSP2833x_common/source/DSP2833x_Gpio.obj" "./DSP2833x_common/source/DSP2833x_I2C.obj" "./DSP2833x_common/source/DSP2833x_Mcbsp.obj" "./DSP2833x_common/source/DSP2833x_MemCopy.obj" "./DSP2833x_common/source/DSP2833x_PieCtrl.obj" "./DSP2833x_common/source/DSP2833x_PieVect.obj" "./DSP2833x_common/source/DSP2833x_Sci.obj" "./DSP2833x_common/source/DSP2833x_Spi.obj" "./DSP2833x_common/source/DSP2833x_SysCtrl.obj" "./DSP2833x_common/source/DSP2833x_Xintf.obj" "./DSP2833x_common/source/DSP2833x_usDelay.obj" "./DSP2833x_headers/source/DSP2833x_GlobalVariableDefs.obj" "../F28335_jjl.cmd" "../DSP2833x_common/lib/IQmath.lib" "../DSP2833x_common/lib/IQmath_fpu32.lib" "../DSP2833x_common/lib/SFO_TI_Build.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5B.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5B_fpu.lib" "../DSP2833x_common/lib/SFO_TI_Build_V5_fpu.lib" "../DSP2833x_common/lib/SFO_TI_Build_fpu.lib" "../DSP2833x_common/lib/rts2800_fpu32.lib" "../DSP2833x_headers/cmd/DSP2833x_Headers_nonBIOS.cmd"  -llibc.a 
+<Linking>
+Finished building target: "123456.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,15 @@
+/*
+ * KEY.h
+ *
+ *  Created on: 2018-8-4
+ *      Author: Administrator
+ */
+
+#ifndef KEY_H_
+#define KEY_H_
+#define GEN_BUZZ_CLK    GpioDataRegs.GPBTOGGLE.bit.GPIO35 = 1   //蜂鸣器控制IO，IO电平翻转，产生控制脉冲
+#define BUZZ_OFF        GpioDataRegs.GPBCLEAR.bit.GPIO35 = 1    //关闭蜂鸣器
+extern void InitKeyGpio(void); // 按键引脚初始化
+extern unsigned char GetKey(void);  // 得到按键值，放在Uint16 Key中
+
+#endif /* KEY_H_ */
