@@ -13,6 +13,8 @@ C_UPPER_SRCS += \
 
 C_SRCS += \
 ../AD9959_2.c \
+../ADC_config.c \
+../Cal_config.c \
 ../Delay.c \
 ../GUI.c \
 ../LCD_24TFT.c \
@@ -24,6 +26,8 @@ C_UPPER_DEPS += \
 
 C_DEPS += \
 ./AD9959_2.d \
+./ADC_config.d \
+./Cal_config.d \
 ./Delay.d \
 ./GUI.d \
 ./LCD_24TFT.d \
@@ -32,6 +36,8 @@ C_DEPS += \
 
 OBJS += \
 ./AD9959_2.obj \
+./ADC_config.obj \
+./Cal_config.obj \
 ./Delay.obj \
 ./GUI.obj \
 ./KEY.obj \
@@ -41,6 +47,8 @@ OBJS += \
 
 OBJS__QUOTED += \
 "AD9959_2.obj" \
+"ADC_config.obj" \
+"Cal_config.obj" \
 "Delay.obj" \
 "GUI.obj" \
 "KEY.obj" \
@@ -50,6 +58,8 @@ OBJS__QUOTED += \
 
 C_DEPS__QUOTED += \
 "AD9959_2.d" \
+"ADC_config.d" \
+"Cal_config.d" \
 "Delay.d" \
 "GUI.d" \
 "LCD_24TFT.d" \
@@ -61,6 +71,8 @@ C_UPPER_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../AD9959_2.c" \
+"../ADC_config.c" \
+"../Cal_config.c" \
 "../Delay.c" \
 "../GUI.c" \
 "../LCD_24TFT.c" \

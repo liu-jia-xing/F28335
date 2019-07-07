@@ -18,8 +18,55 @@
 //!  - I2cMsgIn1
 //!  - I2cMsgOut1
 //
+//###########################################################################
+// $TI Release: F2833x Support Library v2.00.00.00 $
+// $Release Date: Thu Oct 18 15:47:35 CDT 2018 $
+// $Copyright:
+// Copyright (C) 2009-2018 Texas Instruments Incorporated - http://www.ti.com/
+//
+// Redistribution and use in source and binary forms, with or without 
+// modification, are permitted provided that the following conditions 
+// are met:
+// 
+//   Redistributions of source code must retain the above copyright 
+//   notice, this list of conditions and the following disclaimer.
+// 
+//   Redistributions in binary form must reproduce the above copyright
+//   notice, this list of conditions and the following disclaimer in the 
+//   documentation and/or other materials provided with the   
+//   distribution.
+// 
+//   Neither the name of Texas Instruments Incorporated nor the names of
+//   its contributors may be used to endorse or promote products derived
+//   from this software without specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// $
+//###########################################################################
+
+//
+// Included Files
+//
 #include "DSP28x_Project.h"     // Device Headerfile and Examples Include File
 
+//
+// Note: I2C Macros used in this example can be found in the
+// DSP2833x_I2C_defines.h file
+//
+
+//
+// Function Prototypes
+//
 void   I2CA_Init(void);
 Uint16 I2CA_WriteData(struct I2CMSG *msg);
 Uint16 I2CA_ReadData(struct I2CMSG *msg);
@@ -35,7 +82,14 @@ void fail(void);
 #define I2C_EEPROM_HIGH_ADDR  0x00
 #define I2C_EEPROM_LOW_ADDR   0x30
 
+//
+// Globals
+//
 
+//
+// Two bytes will be used for the outgoing address, thus only setup 14 bytes 
+// maximum
+//
 struct I2CMSG I2cMsgOut1=
 {
     I2C_MSGSTAT_SEND_WITHSTOP,
@@ -84,25 +138,77 @@ void main(void)
 
     CurrentMsgPtr = &I2cMsgOut1;
 
+    //
+    // Step 1. Initialize System Control:
+    // PLL, WatchDog, enable Peripheral Clocks
+    // This example function is found in the DSP2833x_SysCtrl.c file.
+    //
     InitSysCtrl();
 
+    //
+    // Step 2. Initialize GPIO:
+    // This example function is found in the DSP2833x_Gpio.c file and
+    // illustrates how to set the GPIO to it's default state.
+    //
+    // InitGpio();
+    
+    //
+    // Setup only the GP I/O only for I2C functionality
+    //
     InitI2CGpio();
 
+    //
+    // Step 3. Clear all interrupts and initialize PIE vector table
+    // Disable CPU interrupts
+    //
     DINT;
 
+    //
+    // Initialize PIE control registers to their default state.
+    // The default state is all PIE interrupts disabled and flags
+    // are cleared.
+    // This function is found in the DSP2833x_PieCtrl.c file.
+    //
     InitPieCtrl();
 
+    //
+    // Disable CPU interrupts and clear all CPU interrupt flags
+    //
     IER = 0x0000;
     IFR = 0x0000;
 
+    //
+    // Initialize the PIE vector table with pointers to the shell Interrupt
+    // Service Routines (ISR).
+    // This will populate the entire table, even if the interrupt
+    // is not used in this example.  This is useful for debug purposes.
+    // The shell ISR routines are found in DSP2833x_DefaultIsr.c.
+    // This function is found in DSP2833x_PieVect.c.
+    //
     InitPieVectTable();
 
+    //
+    // Interrupts that are used in this example are re-mapped to
+    // ISR functions found within this file.
+    //
     EALLOW;	    // This is needed to write to EALLOW protected registers
     PieVectTable.I2CINT1A = &i2c_int1a_isr;
     EDIS;   // This is needed to disable write to EALLOW protected registers
 
+    //
+    // Step 4. Initialize all the Device Peripherals:
+    // This function is found in DSP2833x_InitPeripherals.c
+    //
+    // InitPeripherals(); // Not required for this example
     I2CA_Init();
 
+    //
+    // Step 5. User specific code
+    //
+
+    //
+    // Clear Counters
+    //
     PassCount = 0;
     FailCount = 0;
 

@@ -11,6 +11,8 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./AD9959_2.obj" \
+"./ADC_config.obj" \
+"./Cal_config.obj" \
 "./Delay.obj" \
 "./GUI.obj" \
 "./KEY.obj" \
@@ -185,8 +187,8 @@ ZQ28335_Freq_Project.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "AD9959_2.obj" "Delay.obj" "GUI.obj" "KEY.obj" "LCD_24TFT.obj" "LED.obj" "Main_24TFT.obj" "DSP2833x_common\source\DSP2833x_ADC_cal.obj" "DSP2833x_common\source\DSP2833x_CpuTimers.obj" "DSP2833x_common\source\DSP2833x_DefaultIsr.obj" "DSP2833x_common\source\DSP2833x_PieCtrl.obj" "DSP2833x_common\source\DSP2833x_PieVect.obj" "DSP2833x_common\source\DSP2833x_SysCtrl.obj" "DSP2833x_common\source\DSP2833x_usDelay.obj" "DSP2833x_headers\source\DSP2833x_GlobalVariableDefs.obj" 
-	-$(RM) "AD9959_2.d" "Delay.d" "GUI.d" "LCD_24TFT.d" "LED.d" "Main_24TFT.d" "DSP2833x_common\source\DSP2833x_CpuTimers.d" "DSP2833x_common\source\DSP2833x_DefaultIsr.d" "DSP2833x_common\source\DSP2833x_PieCtrl.d" "DSP2833x_common\source\DSP2833x_PieVect.d" "DSP2833x_common\source\DSP2833x_SysCtrl.d" "DSP2833x_headers\source\DSP2833x_GlobalVariableDefs.d" 
+	-$(RM) "AD9959_2.obj" "ADC_config.obj" "Cal_config.obj" "Delay.obj" "GUI.obj" "KEY.obj" "LCD_24TFT.obj" "LED.obj" "Main_24TFT.obj" "DSP2833x_common\source\DSP2833x_ADC_cal.obj" "DSP2833x_common\source\DSP2833x_CpuTimers.obj" "DSP2833x_common\source\DSP2833x_DefaultIsr.obj" "DSP2833x_common\source\DSP2833x_PieCtrl.obj" "DSP2833x_common\source\DSP2833x_PieVect.obj" "DSP2833x_common\source\DSP2833x_SysCtrl.obj" "DSP2833x_common\source\DSP2833x_usDelay.obj" "DSP2833x_headers\source\DSP2833x_GlobalVariableDefs.obj" 
+	-$(RM) "AD9959_2.d" "ADC_config.d" "Cal_config.d" "Delay.d" "GUI.d" "LCD_24TFT.d" "LED.d" "Main_24TFT.d" "DSP2833x_common\source\DSP2833x_CpuTimers.d" "DSP2833x_common\source\DSP2833x_DefaultIsr.d" "DSP2833x_common\source\DSP2833x_PieCtrl.d" "DSP2833x_common\source\DSP2833x_PieVect.d" "DSP2833x_common\source\DSP2833x_SysCtrl.d" "DSP2833x_headers\source\DSP2833x_GlobalVariableDefs.d" 
 	-$(RM) "KEY.d" 
 	-$(RM) "DSP2833x_common\source\DSP2833x_ADC_cal.d" "DSP2833x_common\source\DSP2833x_usDelay.d" 
 	-@echo 'Finished clean'

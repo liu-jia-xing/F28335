@@ -63,7 +63,6 @@ void main(void)
      //    AdcRegs.ADCTRL2.bit.SOC_SEQ1 = 1;
     }
 }
-
 //
 // adc_isr -
 //

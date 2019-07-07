@@ -1,10 +1,10 @@
 ******************************************************************************
              TMS320C2000 Linker PC v18.12.1                    
 ******************************************************************************
->> Linked Mon Jun 24 19:12:30 2019
+>> Linked Sun Jun 30 09:29:12 2019
 
 OUTPUT FILE NAME:   <ZQ28335_Freq_Project.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 0000b670
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000b905
 
 
 MEMORY CONFIGURATION
@@ -14,8 +14,8 @@ MEMORY CONFIGURATION
 PAGE 0:
   BEGIN                 00000000   00000002  00000000  00000002  RWIX
   RAMM0                 00000050   000003b0  00000000  000003b0  RWIX
-  RAML0                 00008000   00001000  000000a2  00000f5e  RWIX
-  RAML1                 00009000   00003000  0000278e  00000872  RWIX
+  RAML0                 00008000   00001000  000000bb  00000f45  RWIX
+  RAML1                 00009000   00003000  00002b10  000004f0  RWIX
   ZONE7A                00200000   0000fc00  00000000  0000fc00  RWIX
   CSM_RSVD              0033ff80   00000076  00000000  00000076  RWIX
   CSM_PWL               0033fff8   00000008  00000000  00000008  RWIX
@@ -77,8 +77,8 @@ PAGE 1:
   SCIB                  00007750   00000010  00000010  00000000  RWIX
   SCIC                  00007770   00000010  00000010  00000000  RWIX
   I2CA                  00007900   00000040  00000022  0000001e  RWIX
-  RAML4                 0000c000   00001000  00000064  00000f9c  RWIX
-  RAML5                 0000d000   00002000  00001e72  0000018e  RWIX
+  RAML4                 0000c000   00001000  00000084  00000f7c  RWIX
+  RAML5                 0000d000   00002000  00001e95  0000016b  RWIX
   RAML7                 0000f000   00001000  00000000  00001000  RWIX
   ZONE7B                0020fc00   00000400  00000000  00000400  RWIX
   CSM_PWL               0033fff8   00000008  00000008  00000000  RWIX
@@ -90,43 +90,59 @@ SECTION ALLOCATION MAP
  output                                  attributes/
 section   page    origin      length       input sections
 --------  ----  ----------  ----------   ----------------
-.cinit     0    00008000    0000007e     
+.cinit     0    00008000    00000097     
                   00008000    0000003c     KEY.obj (.cinit)
-                  0000803c    00000013     KEY.obj (.cinit:_Keys)
-                  0000804f    0000000d     GUI.obj (.cinit:_Num)
-                  0000805c    0000000a     rts2800_fpu32.lib : _lock.obj (.cinit)
-                  00008066    0000000a                       : exit.obj (.cinit)
-                  00008070    00000008     Main_24TFT.obj (.cinit)
-                  00008078    00000004     KEY.obj (.cinit:_KX_Status)
-                  0000807c    00000002     --HOLE-- [fill = 0]
+                  0000803c    00000015     Cal_config.obj (.cinit)
+                  00008051    00000013     KEY.obj (.cinit:_Keys)
+                  00008064    0000000d     GUI.obj (.cinit:_Num)
+                  00008071    0000000a     rts2800_fpu32.lib : _lock.obj (.cinit)
+                  0000807b    0000000a                       : exit.obj (.cinit)
+                  00008085    00000008     Main_24TFT.obj (.cinit)
+                  0000808d    00000004     KEY.obj (.cinit:_KX_Status)
+                  00008091    00000004     rts2800_fpu32.lib : errno.obj (.cinit)
+                  00008095    00000002     --HOLE-- [fill = 0]
 
-ramfuncs   0    0000809e    00000004     
-                  0000809e    00000004     DSP2833x_usDelay.obj (ramfuncs)
+ramfuncs   0    000080b8    00000004     
+                  000080b8    00000004     DSP2833x_usDelay.obj (ramfuncs)
 
-.text      0    00009000    0000278e     
+.text      0    00009000    00002b10     
                   00009000    0000131e     KEY.obj (.text)
                   0000a31e    00000b7e     GUI.obj (.text)
                   0000ae9c    00000316     DSP2833x_DefaultIsr.obj (.text:retain)
                   0000b1b2    00000200     LCD_24TFT.obj (.text)
                   0000b3b2    000000f6     DSP2833x_SysCtrl.obj (.text)
-                  0000b4a8    00000096     Main_24TFT.obj (.text)
-                  0000b53e    00000078     LED.obj (.text)
-                  0000b5b6    0000005e     rts2800_fpu32.lib : cos.obj (.text)
-                  0000b614    0000005c                       : sin.obj (.text)
-                  0000b670    00000046                       : boot.obj (.text)
-                  0000b6b6    00000028     DSP2833x_PieCtrl.obj (.text)
-                  0000b6de    00000026     Delay.obj (.text)
-                  0000b704    00000022     rts2800_fpu32.lib : i_div.obj (.text)
-                  0000b726    00000020     DSP2833x_PieVect.obj (.text)
-                  0000b746    0000001b     rts2800_fpu32.lib : args_main.obj (.text)
-                  0000b761    00000019                       : exit.obj (.text)
-                  0000b77a    0000000b                       : u_div.obj (.text)
-                  0000b785    00000009                       : _lock.obj (.text)
+                  0000b4a8    0000009c     rts2800_fpu32.lib : fd_add.obj (.text)
+                  0000b544    00000098     Main_24TFT.obj (.text)
+                  0000b5dc    0000008b     rts2800_fpu32.lib : fd_div.obj (.text)
+                  0000b667    00000088                       : fs_div.obj (.text)
+                  0000b6ef    00000083                       : fd_mpy28.asm.obj (.text)
+                  0000b772    00000078     LED.obj (.text)
+                  0000b7ea    00000061     rts2800_fpu32.lib : log.obj (.text)
+                  0000b84b    0000005e                       : cos.obj (.text)
+                  0000b8a9    0000005c                       : sin.obj (.text)
+                  0000b905    00000046                       : boot.obj (.text)
+                  0000b94b    00000031     Cal_config.obj (.text:retain)
+                  0000b97c    0000002a     rts2800_fpu32.lib : fd_cmp28.asm.obj (.text)
+                  0000b9a6    00000028     DSP2833x_PieCtrl.obj (.text)
+                  0000b9ce    00000026     Delay.obj (.text)
+                  0000b9f4    00000022     rts2800_fpu32.lib : i_div.obj (.text)
+                  0000ba16    00000020     DSP2833x_PieVect.obj (.text)
+                  0000ba36    00000020     rts2800_fpu32.lib : sqrt.obj (.text)
+                  0000ba56    0000001c                       : fs_tofd.obj (.text)
+                  0000ba72    0000001b                       : args_main.obj (.text)
+                  0000ba8d    00000019                       : exit.obj (.text)
+                  0000baa6    00000018                       : ll_aox28.asm.obj (.text)
+                  0000babe    00000016                       : frexp.obj (.text)
+                  0000bad4    00000011     ADC_config.obj (.text)
+                  0000bae5    0000000e     rts2800_fpu32.lib : fd_sub28.asm.obj (.text)
+                  0000baf3    0000000b                       : u_div.obj (.text)
+                  0000bafe    00000009                       : _lock.obj (.text)
+                  0000bb07    00000009                       : fd_neg28.asm.obj (.text)
 
 .pinit     0    00008000    00000000     UNINITIALIZED
 
-.switch    0    0000807e    00000020     
-                  0000807e    00000020     KEY.obj (.switch:_KeyFun)
+.switch    0    00008098    00000020     
+                  00008098    00000020     KEY.obj (.switch:_KeyFun)
 
 .stack     1    00000400    00000300     UNINITIALIZED
                   00000400    00000300     --HOLE--
@@ -183,53 +199,61 @@ ECanbMOTORegsFile
 *          1    000062c0    00000040     UNINITIALIZED
                   000062c0    00000040     DSP2833x_GlobalVariableDefs.obj (ECanbMOTORegsFile)
 
-.ebss      1    0000c000    00000064     UNINITIALIZED
+.ebss      1    0000c000    00000084     UNINITIALIZED
                   0000c000    00000022     KEY.obj (.ebss)
                   0000c022    00000018     DSP2833x_CpuTimers.obj (.ebss)
                   0000c03a    00000005     KEY.obj (.ebss:_KX_Status)
-                  0000c03f    00000001     --HOLE--
+                  0000c03f    00000001     rts2800_fpu32.lib : errno.obj (.ebss)
                   0000c040    00000010     KEY.obj (.ebss:_Keys)
-                  0000c050    0000000a     GUI.obj (.ebss:_Num)
-                  0000c05a    00000004     rts2800_fpu32.lib : _lock.obj (.ebss)
-                  0000c05e    00000004                       : exit.obj (.ebss)
-                  0000c062    00000002     Main_24TFT.obj (.ebss)
+                  0000c050    0000000a     Cal_config.obj (.ebss)
+                  0000c05a    0000000a     GUI.obj (.ebss:_Num)
+                  0000c064    0000000a     Main_24TFT.obj (.ebss:_Voltage1)
+                  0000c06e    0000000a     Main_24TFT.obj (.ebss:_Voltage2)
+                  0000c078    00000004     Main_24TFT.obj (.ebss)
+                  0000c07c    00000004     rts2800_fpu32.lib : _lock.obj (.ebss)
+                  0000c080    00000004                       : exit.obj (.ebss)
 
-.econst    1    0000d000    00001e72     
+.econst    1    0000d000    00001e95     
                   0000d000    00000c24     GUI.obj (.econst:_hz24)
                   0000dc24    00000781     GUI.obj (.econst:.string:_sz32)
                   0000e3a5    000005f1     GUI.obj (.econst:.string:_asc16)
                   0000e996    00000242     GUI.obj (.econst:_hz16)
                   0000ebd8    00000100     DSP2833x_PieVect.obj (.econst:_PieVectTableInit)
                   0000ecd8    00000085     GUI.obj (.econst:.string)
-                  0000ed5d    00000019     GUI.obj (.econst:.string:_$P$T6$7)
-                  0000ed76    00000014     KEY.obj (.econst:.string)
-                  0000ed8a    00000013     GUI.obj (.econst:.string:_$P$T0$1)
-                  0000ed9d    0000000b     GUI.obj (.econst:.string:_$P$T5$6)
-                  0000eda8    0000000a     GUI.obj (.econst:.string:_$P$T14$15)
-                  0000edb2    0000000a     GUI.obj (.econst:.string:_$P$T15$16)
-                  0000edbc    0000000a     GUI.obj (.econst:.string:_$P$T18$19)
-                  0000edc6    0000000a     GUI.obj (.econst:.string:_$P$T19$20)
-                  0000edd0    0000000a     GUI.obj (.econst:.string:_$P$T20$21)
-                  0000edda    0000000a     GUI.obj (.econst:.string:_$P$T22$23)
-                  0000ede4    0000000a     GUI.obj (.econst:.string:_$P$T23$24)
-                  0000edee    0000000a     GUI.obj (.econst:.string:_$P$T24$25)
-                  0000edf8    0000000a     GUI.obj (.econst:.string:_$P$T25$26)
-                  0000ee02    00000009     GUI.obj (.econst:.string:_$P$T1$2)
-                  0000ee0b    00000009     GUI.obj (.econst:.string:_$P$T13$14)
-                  0000ee14    00000009     GUI.obj (.econst:.string:_$P$T2$3)
-                  0000ee1d    00000009     GUI.obj (.econst:.string:_$P$T21$22)
-                  0000ee26    00000009     GUI.obj (.econst:.string:_$P$T27$28)
-                  0000ee2f    00000009     GUI.obj (.econst:.string:_$P$T4$5)
-                  0000ee38    00000009     GUI.obj (.econst:.string:_$P$T7$8)
-                  0000ee41    00000008     GUI.obj (.econst:.string:_$P$T17$18)
-                  0000ee49    00000008     GUI.obj (.econst:.string:_$P$T3$4)
-                  0000ee51    00000006     GUI.obj (.econst:.string:_$P$T16$17)
-                  0000ee57    00000006     GUI.obj (.econst:.string:_$P$T26$27)
-                  0000ee5d    00000005     GUI.obj (.econst:.string:_$P$T10$11)
-                  0000ee62    00000005     GUI.obj (.econst:.string:_$P$T11$12)
-                  0000ee67    00000004     GUI.obj (.econst:.string:_$P$T8$9)
-                  0000ee6b    00000004     GUI.obj (.econst:.string:_$P$T9$10)
-                  0000ee6f    00000003     GUI.obj (.econst:.string:_$P$T12$13)
+                  0000ed5d    00000001     --HOLE-- [fill = 0]
+                  0000ed5e    0000001c     rts2800_fpu32.lib : s_atan.c.obj (.econst)
+                  0000ed7a    00000019     GUI.obj (.econst:.string:_$P$T6$7)
+                  0000ed93    00000001     --HOLE-- [fill = 0]
+                  0000ed94    00000014     KEY.obj (.econst:.string)
+                  0000eda8    00000013     GUI.obj (.econst:.string:_$P$T0$1)
+                  0000edbb    0000000b     GUI.obj (.econst:.string:_$P$T5$6)
+                  0000edc6    0000000a     GUI.obj (.econst:.string:_$P$T14$15)
+                  0000edd0    0000000a     GUI.obj (.econst:.string:_$P$T15$16)
+                  0000edda    0000000a     GUI.obj (.econst:.string:_$P$T18$19)
+                  0000ede4    0000000a     GUI.obj (.econst:.string:_$P$T19$20)
+                  0000edee    0000000a     GUI.obj (.econst:.string:_$P$T20$21)
+                  0000edf8    0000000a     GUI.obj (.econst:.string:_$P$T22$23)
+                  0000ee02    0000000a     GUI.obj (.econst:.string:_$P$T23$24)
+                  0000ee0c    0000000a     GUI.obj (.econst:.string:_$P$T24$25)
+                  0000ee16    0000000a     GUI.obj (.econst:.string:_$P$T25$26)
+                  0000ee20    00000009     GUI.obj (.econst:.string:_$P$T1$2)
+                  0000ee29    00000009     GUI.obj (.econst:.string:_$P$T13$14)
+                  0000ee32    00000009     GUI.obj (.econst:.string:_$P$T2$3)
+                  0000ee3b    00000009     GUI.obj (.econst:.string:_$P$T21$22)
+                  0000ee44    00000009     GUI.obj (.econst:.string:_$P$T27$28)
+                  0000ee4d    00000009     GUI.obj (.econst:.string:_$P$T4$5)
+                  0000ee56    00000009     GUI.obj (.econst:.string:_$P$T7$8)
+                  0000ee5f    00000008     GUI.obj (.econst:.string:_$P$T17$18)
+                  0000ee67    00000008     GUI.obj (.econst:.string:_$P$T3$4)
+                  0000ee6f    00000006     GUI.obj (.econst:.string:_$P$T16$17)
+                  0000ee75    00000006     GUI.obj (.econst:.string:_$P$T26$27)
+                  0000ee7b    00000005     GUI.obj (.econst:.string:_$P$T10$11)
+                  0000ee80    00000005     GUI.obj (.econst:.string:_$P$T11$12)
+                  0000ee85    00000004     GUI.obj (.econst:.string:_$P$T8$9)
+                  0000ee89    00000004     GUI.obj (.econst:.string:_$P$T9$10)
+                  0000ee8d    00000001     --HOLE-- [fill = 0]
+                  0000ee8e    00000004     Cal_config.obj (.econst)
+                  0000ee92    00000003     GUI.obj (.econst:.string:_$P$T12$13)
 
 .reset     0    003fffc0    00000002     DSECT
                   003fffc0    00000002     rts2800_fpu32.lib : boot.obj (.reset)
@@ -398,11 +422,13 @@ MODULE SUMMARY
        GUI.obj                           2942    7531               10                
        KEY.obj                           4894    135                55                
        LCD_24TFT.obj                     512     0                  0                 
-       Main_24TFT.obj                    150     8                  2                 
+       Main_24TFT.obj                    152     8                  24                
        LED.obj                           120     0                  0                 
+       Cal_config.obj                    49      25                 10                
        Delay.obj                         38      0                  0                 
+       ADC_config.obj                    17      0                  0                 
     +--+---------------------------------+-------+------------------+--------------------+
-       Total:                            8656    7674               67                
+       Total:                            8724    7699               99                
                                                                                       
     .\DSP2833x_common\source\
        DSP2833x_DefaultIsr.obj           790     0                  0                 
@@ -421,20 +447,38 @@ MODULE SUMMARY
        Total:                            0       0                  2679              
                                                                                       
     ../DSP2833x_common/lib/rts2800_fpu32.lib
+       fd_add.obj                        156     0                  0                 
+       fd_div.obj                        139     0                  0                 
+       fs_div.obj                        136     0                  0                 
+       log.obj                           97      0                  0                 
        cos.obj                           94      0                  0                 
        sin.obj                           92      0                  0                 
        boot.obj                          70      0                  0                 
        exit.obj                          25      10                 4                 
        i_div.obj                         34      0                  0                 
+       sqrt.obj                          32      0                  0                 
+       fs_tofd.obj                       28      0                  0                 
        args_main.obj                     27      0                  0                 
        _lock.obj                         9       10                 4                 
+       frexp.obj                         22      0                  0                 
        u_div.obj                         11      0                  0                 
+       errno.obj                         0       4                  1                 
     +--+---------------------------------+-------+------------------+--------------------+
-       Total:                            362     20                 8                 
+       Total:                            972     24                 9                 
+                                                                                      
+    C:\ti\ccs900\ccs\tools\compiler\ti-cgt-c2000_18.12.1.LTS\lib\rts2800_fpu32.lib
+       fd_mpy28.asm.obj                  131     0                  0                 
+       fd_cmp28.asm.obj                  42      0                  0                 
+       s_atan.c.obj                      0       28                 0                 
+       ll_aox28.asm.obj                  24      0                  0                 
+       fd_sub28.asm.obj                  14      0                  0                 
+       fd_neg28.asm.obj                  9       0                  0                 
+    +--+---------------------------------+-------+------------------+--------------------+
+       Total:                            220     28                 0                 
                                                                                       
        Stack:                            0       0                  768               
     +--+---------------------------------+-------+------------------+--------------------+
-       Grand Total:                      10137   7950               3546              
+       Grand Total:                      11035   8007               3579              
 
 
 GLOBAL DATA SYMBOLS: SORTED BY DATA PAGE
@@ -551,14 +595,21 @@ address     data page           name
 0000c02a     300 (0000c000)     _CpuTimer1
 0000c032     300 (0000c000)     _CpuTimer2
 0000c03a     300 (0000c000)     _KX_Status
+0000c03f     300 (0000c000)     _errno
 
 0000c040     301 (0000c040)     _Keys
-0000c050     301 (0000c040)     _Num
-0000c05a     301 (0000c040)     __unlock
-0000c05c     301 (0000c040)     __lock
-0000c05e     301 (0000c040)     __cleanup_ptr
-0000c060     301 (0000c040)     __dtors_ptr
-0000c063     301 (0000c040)     _yback
+0000c050     301 (0000c040)     _sampling_time
+0000c05a     301 (0000c040)     _Num
+0000c064     301 (0000c040)     _Voltage1
+0000c06e     301 (0000c040)     _Voltage2
+0000c079     301 (0000c040)     _yback
+0000c07a     301 (0000c040)     _LoopCount
+0000c07b     301 (0000c040)     _ConversionCount
+0000c07c     301 (0000c040)     __unlock
+0000c07e     301 (0000c040)     __lock
+
+0000c080     302 (0000c080)     __cleanup_ptr
+0000c082     302 (0000c080)     __dtors_ptr
 
 0000d000     340 (0000d000)     _hz24
 
@@ -580,17 +631,29 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 page  address   name                 
 ----  -------   ----                 
 0     00009000  .text                
-0     0000b761  C$$EXIT              
-0     0000b704  I$$DIV               
-0     0000b715  I$$MOD               
-0     0000b77a  U$$DIV               
-0     0000b77f  U$$MOD               
+0     0000ba8d  C$$EXIT              
+0     0000b4a8  FD$$ADD              
+0     0000b97c  FD$$CMP              
+0     0000b5dc  FD$$DIV              
+0     0000b6ef  FD$$MPY              
+0     0000bb07  FD$$NEG              
+0     0000bae5  FD$$SUB              
+0     0000b667  FS$$DIV              
+0     0000ba56  FS$$TOFD             
+0     0000b9f4  I$$DIV               
+0     0000ba05  I$$MOD               
+0     0000baa6  LL$$AND              
+0     0000baae  LL$$OR               
+0     0000bab6  LL$$XOR              
+0     0000baf3  U$$DIV               
+0     0000baf8  U$$MOD               
 0     0000af82  _ADCINT_ISR          
 0     00380080  _ADC_cal             
 1     00000b00  _AdcMirror           
 1     00007100  _AdcRegs             
 0     0000a5c5  _ClearButtonUp       
 0     0000adf3  _Color_Test          
+1     0000c07b  _ConversionCount     
 1     0000c022  _CpuTimer0           
 1     00000c00  _CpuTimer0Regs       
 1     0000c02a  _CpuTimer1           
@@ -607,9 +670,9 @@ page  address   name
 0     0000b0c2  _DINTCH4_ISR         
 0     0000b0cc  _DINTCH5_ISR         
 0     0000b0d6  _DINTCH6_ISR         
-0     0000809e  _DSP28x_usDelay      
-0     0000b6de  _Delay_ms            
-0     0000b6f2  _Delay_us            
+0     000080b8  _DSP28x_usDelay      
+0     0000b9ce  _Delay_ms            
+0     0000b9e2  _Delay_us            
 1     00000880  _DevEmuRegs          
 0     0000b3c5  _DisableDog          
 0     0000a54b  _DisplayButtonDown   
@@ -669,7 +732,7 @@ page  address   name
 0     0000b05e  _EQEP2_INT_ISR       
 1     00006b00  _EQep1Regs           
 1     00006b40  _EQep2Regs           
-0     0000b6d5  _EnableInterrupts    
+0     0000b9c5  _EnableInterrupts    
 1     00000a80  _FlashRegs           
 0     0000ada5  _Font_Test           
 0     0000a8e7  _GUICoordinate       
@@ -697,10 +760,10 @@ page  address   name
 0     0000ae9c  _INT13_ISR           
 0     0000aea6  _INT14_ISR           
 0     00009000  _InitKeyGpio         
-0     0000b53e  _InitLedGpio         
+0     0000b772  _InitLedGpio         
 0     0000b41c  _InitPeripheralClocks
-0     0000b6b6  _InitPieCtrl         
-0     0000b726  _InitPieVectTable    
+0     0000b9a6  _InitPieCtrl         
+0     0000ba16  _InitPieVectTable    
 0     0000b3cd  _InitPll             
 0     0000b3b2  _InitSysCtrl         
 1     0000c001  _KX_On               
@@ -737,6 +800,7 @@ page  address   name
 0     0000b223  _Lcd_WriteData       
 0     0000b231  _Lcd_WriteData_16Bit 
 0     0000b215  _Lcd_WriteIndex      
+1     0000c07a  _LoopCount           
 0     0000b090  _MRINTA_ISR          
 0     0000b07c  _MRINTB_ISR          
 0     0000b09a  _MXINTA_ISR          
@@ -745,7 +809,7 @@ page  address   name
 1     00005040  _McbspbRegs          
 1     0000c003  _MenuFlag            
 0     0000aece  _NMI_ISR             
-1     0000c050  _Num                 
+1     0000c05a  _Num                 
 0     0000ad64  _Num_Test            
 0     0000b19e  _PIE_RESERVED        
 1     00380090  _PartIdRegs          
@@ -774,7 +838,7 @@ page  address   name
 0     000090f2  _Set_KY              
 0     0000a8a9  _Show_Image          
 0     0000aa16  _Show_Num            
-0     0000b4a8  _Show_Wave           
+0     0000b544  _Show_Wave           
 1     00007040  _SpiaRegs            
 1     0000c01c  _SubSel1             
 1     0000c010  _SubSel3             
@@ -804,6 +868,8 @@ page  address   name
 0     0000af28  _USER8_ISR           
 0     0000af32  _USER9_ISR           
 1     0000c00d  _Val1                
+1     0000c064  _Voltage1            
+1     0000c06e  _Voltage2            
 0     0000af96  _WAKEINT_ISR         
 0     0000acfc  _WavePicture         
 0     0000af6e  _XINT1_ISR           
@@ -824,37 +890,44 @@ abs   ffffffff  ___TI_prof_data_start
 abs   ffffffff  ___binit__           
 abs   ffffffff  ___c_args__          
 0     00008000  ___cinit__           
-0     0000b78e  ___etext__           
+0     0000bb10  ___etext__           
 abs   ffffffff  ___pinit__           
 0     00009000  ___text__            
-0     0000b746  __args_main          
-1     0000c05e  __cleanup_ptr        
-1     0000c060  __dtors_ptr          
-1     0000c05c  __lock               
-0     0000b78d  __nop                
-0     0000b789  __register_lock      
-0     0000b785  __register_unlock    
+0     0000ba72  __args_main          
+1     0000c080  __cleanup_ptr        
+1     0000c082  __dtors_ptr          
+1     0000c07e  __lock               
+0     0000bb06  __nop                
+0     0000bb02  __register_lock      
+0     0000bafe  __register_unlock    
 1     00000400  __stack              
-1     0000c05a  __unlock             
-0     0000b761  _abort               
+1     0000c07c  __unlock             
+0     0000ba8d  _abort               
+0     0000bad4  _adc_config          
+0     0000b94b  _adc_isr             
 1     0000e3a5  _asc16               
-0     0000b670  _c_int00             
-0     0000b5b6  _cos                 
+0     0000b905  _c_int00             
+0     0000b84b  _cos                 
 0     00009173  _data_init           
 0     00009050  _delay               
-0     0000b763  _exit                
+1     0000c03f  _errno               
+0     0000ba8f  _exit                
+0     0000babe  _frexp               
 1     0000e996  _hz16                
 1     0000d000  _hz24                
 1     0000c00e  _ifpressed           
-0     0000b513  _main                
+0     0000b7ea  _log                 
+0     0000b5af  _main                
 0     0000b1a8  _rsvd_ISR            
+1     0000c050  _sampling_time       
 0     0000ae42  _showimage           
-0     0000b614  _sin                 
+0     0000b8a9  _sin                 
+0     0000ba36  _sqrt                
 1     0000dc24  _sz32                
-1     0000c063  _yback               
+1     0000c079  _yback               
 abs   ffffffff  binit                
 0     00008000  cinit                
-0     0000b78e  etext                
+0     0000bb10  etext                
 abs   ffffffff  pinit                
 
 
@@ -864,7 +937,7 @@ page  address   name
 ----  -------   ----                 
 0     00008000  ___cinit__           
 0     00008000  cinit                
-0     0000809e  _DSP28x_usDelay      
+0     000080b8  _DSP28x_usDelay      
 0     00009000  .text                
 0     00009000  _InitKeyGpio         
 0     00009000  ___text__            
@@ -1018,30 +1091,46 @@ page  address   name
 0     0000b3cd  _InitPll             
 0     0000b41c  _InitPeripheralClocks
 0     0000b477  _CsmUnlock           
-0     0000b4a8  _Show_Wave           
-0     0000b513  _main                
-0     0000b53e  _InitLedGpio         
-0     0000b5b6  _cos                 
-0     0000b614  _sin                 
-0     0000b670  _c_int00             
-0     0000b6b6  _InitPieCtrl         
-0     0000b6d5  _EnableInterrupts    
-0     0000b6de  _Delay_ms            
-0     0000b6f2  _Delay_us            
-0     0000b704  I$$DIV               
-0     0000b715  I$$MOD               
-0     0000b726  _InitPieVectTable    
-0     0000b746  __args_main          
-0     0000b761  C$$EXIT              
-0     0000b761  _abort               
-0     0000b763  _exit                
-0     0000b77a  U$$DIV               
-0     0000b77f  U$$MOD               
-0     0000b785  __register_unlock    
-0     0000b789  __register_lock      
-0     0000b78d  __nop                
-0     0000b78e  ___etext__           
-0     0000b78e  etext                
+0     0000b4a8  FD$$ADD              
+0     0000b544  _Show_Wave           
+0     0000b5af  _main                
+0     0000b5dc  FD$$DIV              
+0     0000b667  FS$$DIV              
+0     0000b6ef  FD$$MPY              
+0     0000b772  _InitLedGpio         
+0     0000b7ea  _log                 
+0     0000b84b  _cos                 
+0     0000b8a9  _sin                 
+0     0000b905  _c_int00             
+0     0000b94b  _adc_isr             
+0     0000b97c  FD$$CMP              
+0     0000b9a6  _InitPieCtrl         
+0     0000b9c5  _EnableInterrupts    
+0     0000b9ce  _Delay_ms            
+0     0000b9e2  _Delay_us            
+0     0000b9f4  I$$DIV               
+0     0000ba05  I$$MOD               
+0     0000ba16  _InitPieVectTable    
+0     0000ba36  _sqrt                
+0     0000ba56  FS$$TOFD             
+0     0000ba72  __args_main          
+0     0000ba8d  C$$EXIT              
+0     0000ba8d  _abort               
+0     0000ba8f  _exit                
+0     0000baa6  LL$$AND              
+0     0000baae  LL$$OR               
+0     0000bab6  LL$$XOR              
+0     0000babe  _frexp               
+0     0000bad4  _adc_config          
+0     0000bae5  FD$$SUB              
+0     0000baf3  U$$DIV               
+0     0000baf8  U$$MOD               
+0     0000bafe  __register_unlock    
+0     0000bb02  __register_lock      
+0     0000bb06  __nop                
+0     0000bb07  FD$$NEG              
+0     0000bb10  ___etext__           
+0     0000bb10  etext                
 0     00380080  _ADC_cal             
 1     00000400  __stack              
 1     00000700  __STACK_END          
@@ -1115,13 +1204,19 @@ page  address   name
 1     0000c02a  _CpuTimer1           
 1     0000c032  _CpuTimer2           
 1     0000c03a  _KX_Status           
+1     0000c03f  _errno               
 1     0000c040  _Keys                
-1     0000c050  _Num                 
-1     0000c05a  __unlock             
-1     0000c05c  __lock               
-1     0000c05e  __cleanup_ptr        
-1     0000c060  __dtors_ptr          
-1     0000c063  _yback               
+1     0000c050  _sampling_time       
+1     0000c05a  _Num                 
+1     0000c064  _Voltage1            
+1     0000c06e  _Voltage2            
+1     0000c079  _yback               
+1     0000c07a  _LoopCount           
+1     0000c07b  _ConversionCount     
+1     0000c07c  __unlock             
+1     0000c07e  __lock               
+1     0000c080  __cleanup_ptr        
+1     0000c082  __dtors_ptr          
 1     0000d000  _hz24                
 1     0000dc24  _sz32                
 1     0000e3a5  _asc16               
@@ -1140,4 +1235,4 @@ abs   ffffffff  ___pinit__
 abs   ffffffff  binit                
 abs   ffffffff  pinit                
 
-[277 symbols]
+[299 symbols]

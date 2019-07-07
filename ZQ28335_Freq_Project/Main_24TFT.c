@@ -21,6 +21,13 @@ extern unsigned char Sub_Flag2;          //子菜单2数值输入切换标志位
 extern unsigned char Sub_Flag3;          //子菜单3数值输入切换标志位
 extern unsigned char Sub_Flag4;          //子菜单4数值输入切换标志位
 
+Uint16 LoopCount;
+Uint16 ConversionCount;
+Uint16 Voltage1[10];
+Uint16 Voltage2[10];
+static float amplitude[400];
+static float phaseA[400];
+static Uint16 sampling_time=0;
 
 Uint16 Wave[]={0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,0x7ff,
                0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,0x000,
@@ -53,12 +60,10 @@ void Show_Wave(unsigned int x0,unsigned int y0,unsigned int *Num,unsigned int Ln
         Gui_DrawLine(x0+i-1,yback,x0+i,y0-(0.8*Precent),RED);  //将每个点之间用直线连接，形成波形
         Delay_ms(200);
     }
-
 }
 void main()
 {
     InitSysCtrl();
-
     TFT_Gpio_Init();            //TFT显示模块端口配置
     InitKeyGpio();
     InitLedGpio();
@@ -69,25 +74,29 @@ void main()
     IER = 0x0000;
     IFR = 0x0000;
     InitPieVectTable();
-
     Lcd_Init();              //TFT初始化
     Lcd_Clear(WHITE );       Delay_ms(500);
     Draw_Mainmenu();
-   // Draw_Submenu3();
-  //  WavePicture();
+    EALLOW;  // This is needed to write to EALLOW protected register
+    PieVectTable.ADCINT = &adc_isr;
+    EDIS;    // This is needed to disable write to EALLOW protected registers
+    PieCtrlRegs.PIEIER1.bit.INTx6 = 1;
+    IER |= M_INT1;      // Enable CPU Interrupt 1
+    EINT;               // Enable Global interrupt INTM
+    ERTM;               // Enable Global realtime interrupt DBGM
+    InitAdc();  // For this example, init the ADC
+    // Draw_Submenu3();
+    //  WavePicture();
+    //ADC初始化
+    adc_config();
     Delay_ms(500);
     data_init();
-   // Show_Wave(20,100,Wave,48);
-   // Show_Wave(20,220,Sin,32);
+    //Show_Wave(20,100,Wave,48);
+    //Show_Wave(20,220,Sin,32);
     while(1)
     {
         GetKey();  // 得到按键Key的值
         KeyFun(); //  按键功能
-//        DSP28x_usDelay(100000);  // 两次检测之间需0.1s间隔以上，才能准确检测，可以执行其他代码作延迟。
+        //        DSP28x_usDelay(100000);  // 两次检测之间需0.1s间隔以上，才能准确检测，可以执行其他代码作延迟。
     }
-
 }
-
-
-
-
